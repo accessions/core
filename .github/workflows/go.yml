@@ -23,8 +23,9 @@ jobs:
         go fmt ./...
 
     - name: golint
-      uses: github.com/golangci/golangci-lint
-      #run:
+      #uses: github.com/golangci/golangci-lint
+      run:
+        go build get -u github.com/golangci/golangci-lint
         #golangci-lint.exe run --disable=typecheck ./...
 
     - name: Test core
