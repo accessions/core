@@ -18,8 +18,18 @@ jobs:
       with:
         go-version: 1.15
 
-    - name: Build
-      run: go build -v ./...
+    - name: go fmt
+      run:
+        go fmt ./...
 
-    - name: Test
-      run: go test -v ./...
+    - name: golint
+      run:
+        golangci-lint.exe run --disable=typecheck ./...
+
+    - name: Test core
+      run:
+        go test -v ./...
+
+    - name: Build
+      run:
+        go build -v ./...
