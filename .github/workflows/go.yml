@@ -24,8 +24,8 @@ jobs:
 
     - name: golint
       #uses: github.com/golangci/golangci-lint
-      run:
-        go get -u github.com/golangci/golangci-lint & go build
+     # run:
+        #go get -u github.com/golangci/golangci-lint & go build
         #golangci-lint.exe run --disable=typecheck ./...
 
     - name: Test core
