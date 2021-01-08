@@ -41,5 +41,5 @@ jobs:
           DATE: date
           ENV: dev
         run:
-          echo $NAME $DATE $ENV
+          echo $NAME $DATE $ENV DATE
 
