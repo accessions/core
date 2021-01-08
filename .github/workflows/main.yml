@@ -40,6 +40,12 @@ jobs:
           NAME: smoke
           DATE: date
           ENV: dev
+          ACCESS_TOKEN: ${{ secrets.SMOKE }}
+          BRANCH: gh-pages
+          FOLDER: build
+          BUILD_SCRIPT: npm install && npm run build
         run:
           echo $NAME $DATE $ENV DATE
+      - name: github
+        uses: JamesIves/github-pages-deploy-action@master
 
