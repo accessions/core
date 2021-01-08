@@ -45,7 +45,7 @@ jobs:
           FOLDER: build
           BUILD_SCRIPT: npm install && npm run build
         run:
-          echo $NAME $DATE $ENV DATE
+          echo $NAME $DATE $ENV $DATE
       - name: github
         uses: JamesIves/github-pages-deploy-action@master
 
