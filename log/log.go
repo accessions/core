@@ -1,4 +1,4 @@
-package logs
+package log
 
 import (
 	"encoding/json"
@@ -12,9 +12,7 @@ const (
 	LOG_LEVEL_ERROR   = byte(3)
 )
 
-type handler interface {
-	hander()
-}
+
 
 var ServiceLogs *Logs
 
@@ -34,9 +32,9 @@ type Options struct {
 	Date   time.Time
 }
 
-type Option func(options *Options)
+type newOption func(options *Options)
 
-func (log *Logs) ActLogs(opts ...Option) *Logs {
+func (log *Logs) New (opts ...newOption) *Logs {
 	opt := &Options{
 		Level:  LOG_LEVEL_INFO,
 		Module: "",
