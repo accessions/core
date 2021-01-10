@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e33d2be7-d144-4082-935d-56ac9ab93c59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/log/log_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gredis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/gredis/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gredis/test/redis_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gredis/test/redis_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/help.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/help.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,27 +57,38 @@
       <recent name="E:\self\smokeCore\core" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestJwt_Parse in github.com/accessions/core/jwt/test">
-    <configuration name="TestJwt_Builder in github.com/accessions/core/jwt/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestKong_init in github.com/accessions/core/kong/test">
+    <configuration name="TestKong_init in github.com/accessions/core/kong/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="core" />
-      <working_directory value="$PROJECT_DIR$/jwt/test" />
+      <working_directory value="$PROJECT_DIR$/kong/test" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/accessions/core/jwt/test" />
+      <package value="github.com/accessions/core/kong/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestJwt_Builder\E$" />
+      <pattern value="^\QTestKong_init\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestJwt_Parse in github.com/accessions/core/jwt/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestName in github.com/accessions/core/rabbitmq/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="core" />
-      <working_directory value="$PROJECT_DIR$/jwt/test" />
+      <working_directory value="$PROJECT_DIR$/rabbitmq/test" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/accessions/core/jwt/test" />
+      <package value="github.com/accessions/core/rabbitmq/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestJwt_Parse\E$" />
+      <pattern value="^\QTestName\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestName in github.com/accessions/core/try/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <working_directory value="$PROJECT_DIR$/try/test" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/accessions/core/try/test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestName\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestRedis_Client in github.com/accessions/core/gredis/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -99,24 +113,13 @@
       <pattern value="^\QTestRedis_Cluster\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_GetConfig in github.com/accessions/core/apollo/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="core" />
-      <working_directory value="$PROJECT_DIR$/apollo/test" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/accessions/core/apollo/test" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_GetConfig\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestJwt_Parse in github.com/accessions/core/jwt/test" />
-        <item itemvalue="Go Test.TestJwt_Builder in github.com/accessions/core/jwt/test" />
-        <item itemvalue="Go Test.TestRedis_Cluster in github.com/accessions/core/gredis/test" />
+        <item itemvalue="Go Test.TestKong_init in github.com/accessions/core/kong/test" />
+        <item itemvalue="Go Test.TestName in github.com/accessions/core/rabbitmq/test" />
+        <item itemvalue="Go Test.TestName in github.com/accessions/core/try/test" />
         <item itemvalue="Go Test.TestRedis_Client in github.com/accessions/core/gredis/test" />
-        <item itemvalue="Go Test.Test_GetConfig in github.com/accessions/core/apollo/test" />
+        <item itemvalue="Go Test.TestRedis_Cluster in github.com/accessions/core/gredis/test" />
       </list>
     </recent_temporary>
   </component>

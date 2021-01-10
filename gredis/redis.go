@@ -55,7 +55,7 @@ func (rs *Redis) Go (i int)  {
 
 func clusters (option *Options) {
 	Cluster = redis.NewClusterClient(&redis.ClusterOptions{
-		Addrs: strings.Split(option.Addrs, ","),
+		Addrs: strings.Split(option.Addrs, "|"),
 		Password: option.Password,
 	})
 	output("Cluster")
