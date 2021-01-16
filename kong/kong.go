@@ -58,7 +58,7 @@ func (kong *Kong) New (action string, opts ...newOption) *Kong {
 func (kong *Kong) Go ()  {
 	defer func() {
 		if err := recover(); err != nil {
-			fmt.Println("Error: ",err)
+			fmt.Println("Smoke Error: ",err)
 			panic(err)
 		}
 	}()
