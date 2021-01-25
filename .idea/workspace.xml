@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e33d2be7-d144-4082-935d-56ac9ab93c59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kong/kong.go" beforeDir="false" afterPath="$PROJECT_DIR$/kong/kong.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kong/test/kong_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kong/test/kong_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smoke/cmd/cmd.md" beforeDir="false" afterPath="$PROJECT_DIR$/smoke/cmd/cmd.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -114,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestRedis_Client in github.com/accessions/core/gredis/test" />
+        <item itemvalue="Go Test.TestName in github.com/accessions/core/try/test" />
+        <item itemvalue="Go Test.TestName in github.com/accessions/core/rabbitmq/test" />
         <item itemvalue="Go Test.TestName in github.com/accessions/core/kong/test" />
         <item itemvalue="Go Test.TestKong_init in github.com/accessions/core/kong/test" />
-        <item itemvalue="Go Test.TestName in github.com/accessions/core/rabbitmq/test" />
-        <item itemvalue="Go Test.TestName in github.com/accessions/core/try/test" />
-        <item itemvalue="Go Test.TestRedis_Client in github.com/accessions/core/gredis/test" />
       </list>
     </recent_temporary>
   </component>
