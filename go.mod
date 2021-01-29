@@ -1,9 +1,10 @@
 module github.com/accessions/core
 
-go 1.15
+go 1.16
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
+	github.com/flowchartsman/swaggerui v0.0.0-20210118065950-521186093213 // indirect
 	github.com/go-ini/ini v1.62.0
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/google/go-querystring v1.0.0 // indirect
