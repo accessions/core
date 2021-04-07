@@ -8,8 +8,8 @@ import (
 // 生产消费模型: 生产者只需要关注生产，而不用去理会消费者的消费行为，更不用关心消费者是否执行完毕。而消费者只关心消费任务，而不需要关注如何生产。
 func StartProduct ()  {
 	ch := make(chan int, 10)
-	consumer(ch)
 	producer(ch)
+	consumer(ch)
 	time.Sleep(3 * time.Second)
 }
 // 1个生产者
