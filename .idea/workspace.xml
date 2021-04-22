@@ -56,55 +56,55 @@
     <configuration name="TestKong_init in github.com/accessions/core/kong/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <working_directory value="$PROJECT_DIR$/kong/test" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="github.com/accessions/core/kong/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestKong_init\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestName in github.com/accessions/core/kong/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <working_directory value="$PROJECT_DIR$/kong/test" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="github.com/accessions/core/kong/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestName\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestName in github.com/accessions/core/rabbitmq/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <working_directory value="$PROJECT_DIR$/rabbitmq/test" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="github.com/accessions/core/rabbitmq/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestName\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestName in github.com/accessions/core/try/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <working_directory value="$PROJECT_DIR$/try/test" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="github.com/accessions/core/try/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestName\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestRedis_Client in github.com/accessions/core/gredis/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <working_directory value="$PROJECT_DIR$/gredis/test" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="github.com/accessions/core/gredis/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <pattern value="^\QTestRedis_Client\E$" />
       <method v="2" />
     </configuration>
