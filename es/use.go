@@ -1,6 +1,11 @@
 package es
 
 func test()  {
+	/**
+	docker pull blacktop/kibana:7.4
+	docker tag blacktop/kibana:7.4  kb:74
+	docker run --init -d --name kb -e elasticsearch.hosts="http://{service}:9200"  -p 5601:5601  kb:74
+	 */
 	// date group  - ad_report_type group
 	/*
 		GET /datacenter/_search
