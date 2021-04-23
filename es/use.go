@@ -86,3 +86,46 @@ func test()  {
 	}
 	return resp, nil*/
 }
+/*func (s *statisticsRepo) commonQuery(condition *domain.EffectTotalCondition) *elastic.BoolQuery {
+	query := elastic.NewBoolQuery()
+	if condition.PayType != "" {
+		query = query.Must(elastic.NewMatchQuery("ad_report_type.keyword", condition.PayType))
+	}
+	if !condition.StartDate.IsZero() && !condition.EndDate.IsZero() {
+		query = query.Must(elastic.NewRangeQuery("ad_report_time").Gte(condition.StartDate).Lt(condition.EndDate))
+	}
+	for _, scene := range condition.Scenes {
+		query = query.Should(elastic.NewTermQuery("ad_report_scene_code.keyword", scene))
+		// 解决ES搜索，should和must共用，should失效的问题
+		query.MinimumNumberShouldMatch(1)
+	}
+	switch condition.Tag {
+	case ">=":
+		query = query.Must(elastic.NewRangeQuery(condition.PayType).Gte(condition.Value))
+	}
+	for _, id := range condition.Customers {
+		query = query.Should(elastic.NewTermQuery("customer_id", id))
+		// 解决ES搜索，should和must共用，should失效的问题
+		query.MinimumNumberShouldMatch(1)
+	}
+
+	for _, id := range condition.Merchants {
+		query = query.Should(elastic.NewTermQuery("merchant_id", id))
+		// 解决ES搜索，should和must共用，should失效的问题
+		query.MinimumNumberShouldMatch(1)
+	}
+
+	for _, id := range condition.ShopIndustries {
+		query = query.Should(elastic.NewTermQuery("shop_type_code", id))
+		// 解决ES搜索，should和must共用，should失效的问题
+		query.MinimumNumberShouldMatch(1)
+	}
+
+	for _, id := range condition.Cities {
+		query = query.Should(elastic.NewTermQuery("code_city", id))
+		// 解决ES搜索，should和must共用，should失效的问题
+		query.MinimumNumberShouldMatch(1)
+	}
+
+	return query
+}*/
