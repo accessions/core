@@ -32,7 +32,7 @@ type Options struct {
 	Date   time.Time
 }
 
-type newOption func(options *Options)
+type newOption func(options *Options) error
 
 func (log *Logs) New (opts ...newOption) *Logs {
 	opt := &Options{
@@ -47,6 +47,13 @@ func (log *Logs) New (opts ...newOption) *Logs {
 	}
 	log.option = opt
 	return log
+}
+
+func SetLevel(level int) newOption {
+	return func(options *Options) error {
+		options.Level = level
+		return nil
+	}
 }
 
 func (log *Logs) Echo() {

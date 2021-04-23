@@ -135,3 +135,25 @@ func CombinSql(mainSql string, whereSql []string) string {
 	mainSql = strings.ReplaceAll(mainSql, "$WHERE", str)
 	return mainSql
 }
+
+
+// AddRetailDeals batch execute
+/*func AddRetailDeals(installables []rsp.AiotRetailDeal) {
+	fmt.Println(len(installables))
+	db := mysqlconn.GetDB(setting.AiotDb)
+	defer db.Close()
+	inserts := utils.ToInterfaceArr(installables)
+	length := len(installables) / 1000
+	for i := 0; i < length; i++ {
+		insertItems := inserts[i*1000 : (i+1)*1000-1]
+		err := gormbulk.BulkInsert(db, insertItems, len(insertItems))
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+	insertItems := inserts[length*1000:]
+	err := gormbulk.BulkInsert(db, insertItems, len(insertItems))
+	if err != nil {
+		fmt.Println(err)
+	}
+}*/
