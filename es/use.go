@@ -129,3 +129,96 @@ func test()  {
 
 	return query
 }*/
+
+/*
+GET /es_datacenter/_search
+{
+    "_source": {
+        "includes": [
+            "serialnum",
+            "ad_plan_starttime",
+            "ad_plan_endtime",
+            "ad_report_scene",
+            "ad_plan_advertiser_name",
+            "ad_plan_name",
+            "merchant_name",
+            "shop_type_top_name",
+            "shop_type_name",
+            "name_prov",
+            "name_city",
+            "name_coun",
+            "customer_name",
+            "ad_report_time"
+        ]
+    },
+    "from": 0,
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "match": {
+                        "ad_plan_id": {
+                            "query": 205
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "ad_report_type": {
+                            "query": "cpc"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "size": 10
+}
+*/
+
+/*
+
+func (s *statisticsRepo) EffectGroupByDate(condition *domain.EffectCondition) ([]domain.DateValueObject, error) {
+query := s.commonQuery(condition)
+payTypeAgg := elastic.NewTermsAggregation().Field("date_num").Order("_key", true).Size(2000).
+SubAggregation("cpc", elastic.NewSumAggregation().Field("cpc"))
+payTypeAgg = payTypeAgg.SubAggregation("cpa", elastic.NewSumAggregation().Field("cpa"))
+payTypeAgg = payTypeAgg.SubAggregation("cpm", elastic.NewSumAggregation().Field("cpm"))
+//payTypeAgg.SubAggregation("test", elastic.NewBucketSelectorAggregation().AddBucketsPath("cpc", "cpc").Script(elastic.NewScript("params.cpc >=1")))
+if condition.EffectRangeCondition.Value > 0 {
+payTypeAgg.SubAggregation("test", elastic.NewBucketSelectorAggregation().AddBucketsPath(condition.EffectRangeCondition.PayType, condition.EffectRangeCondition.PayType).Script(elastic.NewScript(fmt.Sprintf("params.%s >= %d",condition.EffectRangeCondition.PayType, condition.EffectRangeCondition.Value))))
+}
+searchResult, err := EsClient().Search().Index(s.index).Size(2000).
+Query(query).
+Aggregation("group_by_date_num", payTypeAgg).
+Pretty(true).
+Do(context.Background())
+if err != nil {
+return nil, err
+}
+agg, found := searchResult.Aggregations.Terms("group_by_date_num")
+if !found {
+return nil, errors.New("should have a terms aggregation called " + "group_by_date_num")
+}
+var rows []domain.DateValueObject
+// 遍历桶数据
+for _, userBucket := range agg.Buckets {
+// 每一个桶都有一个key值，其实就是分组的值，可以理解为SQL的group by值
+effect := map[string]int{}
+for i, sum := range userBucket.Aggregations {
+switch i {
+case "cpa", "cpm", "cpc":
+temp := struct {Value float64}{}
+_= json.Unmarshal(sum, &temp)
+effect[i] = int(temp.Value)
+}
+}
+// 添加上转化率
+//effect.Rate = bussiness.CalcRate(effect.Cpc, effect.Cpa)
+dateStr := pkg.IntToDateStr(int(userBucket.Key.(float64)))
+rows = append(rows, domain.DateValueObject{Date: dateStr, Value: effect})
+}
+
+return rows, nil
+}
+*/

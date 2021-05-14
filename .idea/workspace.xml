@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e33d2be7-d144-4082-935d-56ac9ab93c59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es/use.go" beforeDir="false" afterPath="$PROJECT_DIR$/es/use.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logx.go" beforeDir="false" afterPath="$PROJECT_DIR$/log/logx.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +18,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://C:/Go" />
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -38,7 +39,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="D:/work/payfun.dms.service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -53,27 +54,14 @@
       <recent name="E:\self\smokeCore\core" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestName in github.com/accessions/core/kong/test">
-    <configuration name="TestKong_init in github.com/accessions/core/kong/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestSafe in github.com/accessions/core/threads/test">
+    <configuration name="go build github.com/accessions/core/threads/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="core" />
-      <working_directory value="$PROJECT_DIR$/kong/test" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/accessions/core/kong/test" />
+      <package value="github.com/accessions/core/threads/test" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestKong_init\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestName in github.com/accessions/core/kong/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="core" />
-      <working_directory value="$PROJECT_DIR$/kong/test" />
-      <kind value="PACKAGE" />
-      <package value="github.com/accessions/core/kong/test" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestName\E$" />
+      <filePath value="$PROJECT_DIR$/threads/test/test.go" />
       <method v="2" />
     </configuration>
     <configuration name="TestName in github.com/accessions/core/rabbitmq/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -109,13 +97,25 @@
       <pattern value="^\QTestRedis_Client\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestSafe in github.com/accessions/core/threads/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <working_directory value="$PROJECT_DIR$/threads/test" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/accessions/core/threads/test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSafe\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSafe in github.com/accessions/core/threads/test" />
+        <item itemvalue="Go Build.go build github.com/accessions/core/threads/test" />
         <item itemvalue="Go Test.TestRedis_Client in github.com/accessions/core/gredis/test" />
         <item itemvalue="Go Test.TestName in github.com/accessions/core/try/test" />
         <item itemvalue="Go Test.TestName in github.com/accessions/core/rabbitmq/test" />
-        <item itemvalue="Go Test.TestName in github.com/accessions/core/kong/test" />
-        <item itemvalue="Go Test.TestKong_init in github.com/accessions/core/kong/test" />
       </list>
     </recent_temporary>
   </component>
