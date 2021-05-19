@@ -12,7 +12,7 @@ var (
 )
 // grpc internal.go:67
 func init()  {
-	ServiceAction = func(svc *Service) IServiceOptions {
+	ServiceAction = func(svc *services) IServiceOptions {
 		return svc.opt.opts
 	}
 }
@@ -21,7 +21,7 @@ type IServiceOptions interface {
 	config () error
 }
 
-type Service struct {
+type services struct {
 	opt serviceOptions
 }
 
@@ -34,7 +34,7 @@ func (*serviceOptions) config () error {
 }
 
 func test()  {
-	f := ServiceAction.(func(svc *Service) IServiceOptions)
-	_ = f(new(Service)).config()
+	f := ServiceAction.(func(svc *services) IServiceOptions)
+	_ = f(new(services)).config()
 
 }
