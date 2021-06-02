@@ -25,3 +25,13 @@ func (w Worker) Schedule() {
 	g.Wait()
 
 }
+
+func GWorker(cfs ...func()) {
+
+	group := NewGroup()
+	for _, cf := range cfs {
+		group.SafeRun(cf)
+	}
+	group.Wait()
+
+}
