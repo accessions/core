@@ -6,6 +6,10 @@ type group struct {
 	group sync.WaitGroup
 }
 
+func NewGroup() *group {
+	return &group{}
+}
+
 func (g *group) Run(call func()) {
 	g.group.Add(1)
 	go func() {
