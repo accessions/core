@@ -11,3 +11,12 @@ func TestWorker(t *testing.T) {
 		fmt.Println("11111")
 	}, 3).Schedule()
 }
+
+func TestGroupWorker(t *testing.T) {
+
+	threads.GWorker(func() {
+		fmt.Println("1")
+	}, func() {
+		fmt.Println("2")
+	})
+}
