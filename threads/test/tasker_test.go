@@ -11,5 +11,7 @@ func TestTasker(t *testing.T) {
 		for i := 0; i < 4; i++ {
 			fmt.Println(i)
 		}
+
+		fmt.Println("-------")
 	})
 }

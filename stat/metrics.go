@@ -5,3 +5,5 @@ type (
 		Name string
 	}
 )
+
+type istats interface{}
